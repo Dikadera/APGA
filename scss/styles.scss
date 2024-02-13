@@ -1,0 +1,14 @@
+@import "./variables.scss";
+@import "./base.scss";
+@import "./header.scss";
+@import "./landingPage";
+
+
+nav {
+    @include Navbar;
+
+}
+
+main {
+    @include landingPage;
+}

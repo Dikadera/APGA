@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Simple Responsive Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+
+<body>
+
+    <nav class="navbars">
+        <div class="apga-logo">
+            <a href="index.html"><img src="img/Fp_GIwQXwAQpcYP-removebg-preview.png" alt=""></a>
+        </div>
+        <ul class="navlinks">
+            <li><a href="#">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="#">News </a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#"></a></li>
+
+            <div class="join-us-mobile ">
+                <a href="#">Join us </a>
+            </div>
+        </ul>
+
+        <div class="join-us">
+            <a href="#">Join us </a>
+        </div>
+
+        <div class="hamburger">
+            <img class="show-menu" src="img/bar-chart-horizontal-fill.png" alt="">
+            <!-- <i class="ri-skip-up-line hide exit-icon"  style="width: 32px; height: 32px;"></i> -->
+            <img src="img/xrp-line.png" alt="" class="hide exit-icon">
+              
+        </div>
+        
+    </nav>
+
+    <main>
+ 
+       
+
+        <section class="gallery">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="img/1000_F_299806993_STxDGOrV8SL1CE25vjDITi3FcuYCkJz2.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="img/abc.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="img/Fp97w3yWAAA4_oT.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="img/FrWeqbXagAEu502.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="img/IMG-20230115-WA0028-1024x683.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="img/SLY.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="img/soludo.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="img/xrp-line.png" alt=""></div>
+                  <div class="swiper-slide"><img src="img/willie.jpeg" alt=""></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+                <div class="autoplay-progress">
+                  <svg viewBox="0 0 48 48">
+                    <circle cx="24" cy="24" r="20"></circle>
+                  </svg>
+                  <span></span>
+                </div>
+              </div>
+        </section>
+    </main>
+    <script src="JS/navbar.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+      
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+      <!-- Initialize Swiper -->
+      <script>
+        const progressCircle = document.querySelector(".autoplay-progress svg");
+        const progressContent = document.querySelector(".autoplay-progress span");
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          centeredSlides: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+          },
+          on: {
+            autoplayTimeLeft(s, time, progress) {
+              progressCircle.style.setProperty("--progress", 1 - progress);
+              progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+            }
+          }
+        });
+      </script>
+  
+
+</body>
+
+</html>
+</body>
+</html>
