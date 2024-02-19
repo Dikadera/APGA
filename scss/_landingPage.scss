@@ -49,13 +49,13 @@
         }
         .text {
             position: absolute;
-            top: 10%; 
-            left: 25%; 
+            top: 20%; 
+            left: 20%; 
             text-align: center;
             z-index: 2; 
 
             h1 {
-                font-size: 100px;
+                font-size: 120px;
                 color: $primarycolor;
             }
         
@@ -178,7 +178,7 @@
         justify-content: center;
         align-items: center;
         margin-bottom: 100px;
-        border-radius: 20px;
+        
 
 
 
@@ -243,7 +243,9 @@
     justify-content: center;
     align-items: center;
     gap: 5rem;
-    background-color: rgb(250, 250, 239);
+    width: 100%;
+    height: auto;
+    background-color: rgb(202, 239, 207);
     padding: 5% 10%;
     margin-bottom: 200px;
     .presidentimg {
@@ -390,12 +392,15 @@
             flex-direction: column;
             position: relative;
             gap: 3rem;
+            padding-inline: 5%;
             h2 {
                 color: $secondarycolor;
                 text-transform:uppercase;
             }
             p {
                 font-weight: 600;
+                text-align: justify;
+                
             }
             h4 {
                 font-style: italic;
@@ -415,7 +420,7 @@
                 align-items: center;
                 transition: .5s ease;
                 position: absolute;
-                bottom: -30%;
+                bottom: -20%;
                 right: 5%;
 
                 a {
@@ -439,6 +444,98 @@
     }
 }
 
+//FAQ
+.subscribe {
+    width: 100%;
+    height: 400px;
+    padding: auto;
+    margin-bottom: 100px;
+    background-color: $secbackgroundcolor;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .newsletter {
+
+        position: relative;
+        h1 {
+            font-size: 30px;
+            text-align: center;
+            color: $secondarycolor;
+            padding-bottom: 20px;
+        }
+        input {
+            width: 500px;
+            height: 50px;
+            border: none;
+            border-radius: 10px;
+
+        }
+        button {
+            width: 150px;
+            height: 40px;
+            background-color: $secondarycolor;
+            color: $primarycolor;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            position: absolute;
+            top: 56%;
+            right: 8%;
+            font-size: 20px;
+            transition: 0.5s ease;
+
+            &:hover {
+                transform: scale(1.1);
+                background-color: $primarycolor;
+                color: $secondarycolor;
+            }
+                
+                
+        }
+    }
+
+
+    #accordion {
+        max-width: 700px;
+        padding:0 auto;
+        
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        h1 {
+            font-size: 30px;
+            text-align: center;
+            color: $secondarycolor;
+        }
+        .menu {
+            // border:1px solid #008080;
+            border-bottom:none;
+            
+            .header {
+                display:flex;
+                padding:10px; 
+                cursor: pointer;
+                border-radius: 5px;
+                background-color: $secondarycolor;
+                color: $primarycolor;
+                .title {
+                    flex:1;
+                  }
+                  .icon {
+                    font-size: 25px;
+                  }
+            }
+            .content {
+                padding: 10px;
+                background-color: $primarycolor;
+                display: none;
+                border-radius: 15px;
+                
+            }
+        }
+      }
+}
 
 
 
@@ -452,6 +549,7 @@ footer {
     flex-direction: column;
     justify-content: space-around;
     position: relative;
+   
     .footer-container {
         display: flex;
         justify-content: space-around;
@@ -527,12 +625,321 @@ footer {
     
 }
 
+// ABOUT US
+.aboutus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0 100px 0;
+
+}
+    .aboutuscontainer {
+        width: 70%;
+        height: 1200px;
+        background-color: $secondarycolor;
+        padding: 5% 10%;
+        border-radius: 30px;
+        
+        h1 {
+            color: $primarycolor;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        p {
+            color: $primarycolor;
+            font-size: 18px;
+            text-align: justify;
+            
+            .aboutustopic {
+                font-weight: 600;
+                font-size: 22px;
+                
+            }
+            .electhistory {
+                text-align: center;
+                font-size: 22px;
+                font-weight: 600;
+                
+            }
+            
+
+
+        }
+        
+    }
+
+//JOIN US PAGE
+
+
+    .signupform {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        
+        padding-inline: 10%;
+        margin: 100px 0;
+        
+        
+     .signupimg {
+        width: 60% ;
+        height: 100vh;
+        
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 30px;
+        }
+     }   
+        
+        form {
+            width: 40%;
+            background-color: $secondarycolor;
+            padding: 50px 20px;
+            border-radius: 10px;
+            padding-inline: 5%;
+
+            h1 {
+                color: $primarycolor;
+                font-size: 30px;
+                text-align: center;
+                padding-bottom: 50px;
+            }
+            
+            
+            
+            // box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            label {
+                display: block;
+                margin-bottom: 5px;
+                color: $primarycolor;
+                font-size: 20px;
+              }
+            input {
+                width: 100%;
+                padding: 8px;
+                margin-bottom: 15px;
+                border: none;
+                border-bottom: 1px solid #400B08;
+                background: transparent;
+                outline: none;
+                color: yellow;
+                font-size: 20px;
+            }
+            .age-inputs {
+                display: flex;
+                // margin-bottom: 100px;
+                input {
+                    flex: 1;
+                    padding: 8px;
+                    margin-right: 10px;
+                    border: 1px solid #400B08;
+                    border-radius: 5px;
+                    &::placeholder {
+                        color: #400B08;
+                    }
+                  }
+              }
+              .enteryourage {
+                margin-bottom: 50px;
+              }
+              
+               
+
+            button {
+                padding: 10px 20px;
+                background-color: #400B08;
+                color: $primarycolor;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 18px;
+                margin-bottom: 20px;
+
+                &:hover {
+                    background-color: yellow;
+                    color: $secondarycolor;
+                  }
+            }
+            p{
+                font-size: 18px;
+                color: #400B08;
+            }
+            a {
+                color: $primarycolor;
+                transition: 0.5s ease;
+                &:hover{
+                    transform: scale(1.1);
+                    text-decoration: underline yellow;
+                }
+            }
+            
+              
+        }
+        
+          
+        
+          
+        
+          
+        }
+//MOBILE RESPONSIVENESS FOR SIGNUP
+@media screen and (max-width: 768px) {  
+    .signupform {
+        height: auto;
+        flex-direction: column;
+        margin: 20px 0 200px 0;
+        
+
+        .signupimg {
+            width: 70%;
+            height: 300px;
+        }
+        form {
+            width: 100vw;
+            height: auto;
+            padding-inline: 5% !important;
+           
+        }
+    }
+    footer {
+        // margin-top: 100px !important;
+    }
+}
+}
+
+
+// SIGN IN PAGE     
+.signinform {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    
+    padding-inline: 10%;
+    margin: 100px 0;
+    
+    
+ .signinimg {
+    width: 60% ;
+    height: 100vh;
+    
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 30px;
+    }
+ }   
+    
+    form {
+        width: 40%;
+        height: 100vh;
+        background-color: $secondarycolor;
+        padding: 50px 20px;
+        border-radius: 10px;
+        padding-inline: 5%;
+
+        h1 {
+            color: $primarycolor;
+            font-size: 30px;
+            text-align: center;
+            padding-bottom: 50px;
+        }
+        
+        
+        
+        // box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: $primarycolor;
+            font-size: 20px;
+          }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: none;
+            border-bottom: 1px solid #400B08;
+            background: transparent;
+            outline: none;
+            color: yellow;
+            font-size: 20px;
+        }
+        
+          
+           
+
+        button {
+            padding: 10px 20px;
+            background-color: #400B08;
+            color: $primarycolor;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            margin-bottom: 100px;
+
+            &:hover {
+                background-color: yellow;
+                color: $secondarycolor;
+              }
+        }
+        p{
+            font-size: 18px;
+            color: #400B08;
+        }
+        a {
+            color: $primarycolor;
+            transition: 0.5s ease;
+            &:hover{
+                transform: scale(1.1);
+                text-decoration: underline yellow;
+            }
+        }
+        
+          
+    }
+    
+      
+    
+      
+    
+      
+    }
+    //MOBILE RESPONSIVENESS FOR SIGN IN
+@media screen and (max-width: 768px) {  
+    .signinform {
+        height: auto;
+        flex-direction: column;
+        margin: 20px 0 200px 0;
+        
+
+        .signinimg {
+            width: 70%;
+            height: 300px;
+        }
+        form {
+            width: 100vw;
+            padding-inline: 5% !important;
+           
+        }
+    }
+    footer {
+        // margin-top: 100px !important;
+    }
+}
 
 
 
 
-
-//MOBILE RESPONSIVENESS 
+//MOBILE RESPONSIVENESS FOR LANDING PAGE 
 @media (max-width: 768px) {
     .hero {
         margin-bottom: 100px;
@@ -544,7 +951,7 @@ footer {
         .text{
             left: 0 !important;
             h1{
-                font-size: 50px;
+                font-size: 50px !important;
             }
         }
     }
@@ -575,20 +982,20 @@ footer {
         margin-bottom: 200px;
         
         .candidateimg{
-          width: 70%;
-          height: 100vh;
+          width: 70% !important;
+          height: 100vh !important;
         
         }
         
     }
     .history {
-        height: 100vh;
+        height: 1000px !important;
         h1 {
-            padding-bottom: 20px;
+            padding-bottom: 20px !important;
         }
         .historynote {
             p {
-                font-size: 15px;
+                font-size: 15px !important;
             }
         }
     }
@@ -596,69 +1003,102 @@ footer {
     .president {
         flex-direction: column;
         gap: 1rem;
+        height: 1200px !important;
+        
         
 
         .presidentimg {
-            width: 100vw;
+            width: 100vw !important;
             padding-inline: 10%;
         }
         .missiongoals {
-            width: 100vw;
+            width: 100vw !important;
             padding-inline: 10%;
         }
     }
 
     .news {
-        padding-inline: 10%;
+        padding-inline: 10% !important;
         
         h1 {
-            font-size: 20px;
+            font-size: 20px !important;
             padding-bottom: 10px !important;
             padding-top: 100px;
             
             i {
-                font-size: 40px;
+                font-size: 40px !important;
             }
         }
        
 
         
         .news-container {
-            height: 100vh;
+            height: 100vh !important;
             flex-direction: column;
             gap: 1rem;
             .news-img {
-                width: 100%;
+                width: 100% !important;
                 
             }
             .news-p {
-                width: 100%;
+                width: 100% !important;
 
                 h2 {
-                    font-size: 18px;
+                    font-size: 18px !important;
 
                 }
 
                 .readmore  {
-                    bottom: 0;
-                    width: 100px;
-                    height: 40px;
+                    bottom: 0 !important;
+                    width: 100px !important;
+                    height: 40px !important;
                     a {
-                        font-size: 15px;
+                        font-size: 15px !important;
                     }
                 }
             }
         }
     }
+    .subscribe {
+        flex-direction: column;
+        justify-content: center;
+        height: 600px !important;
+        
+        .newsletter {
+            padding-inline: 5%;
+            h1 {
+                font-size: 22px !important;
+            }
+            input {
+                width: 60% !important;
+            }
+            button {
+                width: 100px !important;
+                font-size: 16px !important;
+                right: 12% !important;
+                top: 60% !important;
+            }
+        }
+
+        #accordion {
+            max-width: 100vw;
+            padding-inline: 5%;
+            // h1 {
+            //     padding-top: 50px;
+            // }
+        }
+        
+
+    }
 
     footer {
-        height: 250px;
+        height: 300px !important;
 
         .footer-container {
 
             .navlinks {
                 flex-direction: column;
-                gap: 10px;
+                gap: 10px !important;
                 a {
                     font-size: 18px;
                 }
@@ -666,7 +1106,7 @@ footer {
         }
     }
 }
-}
+
   
 
   
