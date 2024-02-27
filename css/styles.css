@@ -168,6 +168,237 @@ html p {
     padding-inline: 5% !important;
   }
 }
+.body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.body .sidebar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 115px;
+  height: 100vh;
+  padding: 0 1.7rem;
+  color: yellow;
+  background-color: #00923F;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  overflow: hidden;
+}
+.body .sidebar:hover {
+  width: 240px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+.body .sidebar .dashlogo {
+  height: 100px;
+  padding: 16px;
+}
+.body .sidebar .menu {
+  height: 90%;
+  position: relative;
+  padding: 0;
+  list-style: none;
+}
+.body .sidebar .menu li {
+  padding: 1.2rem;
+  margin: 8px 0;
+  border-radius: 8px;
+}
+.body .sidebar .menu li:hover {
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  background: rgb(37, 61, 40);
+}
+.body .sidebar .menu li a {
+  color: yellow;
+  font-size: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+.body .sidebar .menu li a span {
+  overflow: hidden;
+}
+.body .sidebar .menu li a i {
+  font-size: 1.5rem;
+}
+.body .sidebar .menu .logout {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-left: 20px;
+  margin-top: 200px;
+}
+.body .sidebar .menu .logout:hover {
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  background: rgb(37, 61, 40);
+}
+.body .main-content {
+  position: relative;
+  background: rgb(202, 239, 207);
+  width: 100%;
+  padding: 1rem;
+}
+.body .main-content .header-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #00923F;
+  padding: 10px 2rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  color: yellow;
+}
+.body .main-content .header-wrapper img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.body .main-content .header-wrapper .user-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+.body .main-content .header-wrapper .user-info .searchbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  background-color: #400B08;
+  padding: 5px 12px;
+  border-radius: 5px;
+}
+.body .main-content .header-wrapper .user-info .searchbox input {
+  width: 300px;
+  height: 30px;
+  border: none;
+  background-color: rgb(202, 239, 207);
+  outline: none;
+  border-radius: 5px;
+}
+.body .main-content .header-wrapper .user-info .searchbox i {
+  font-size: 20px;
+  cursor: pointer;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+.body .main-content .header-wrapper .user-info .searchbox i:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  color: #00923F;
+}
+.body .dashcard-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-inline: 100px;
+}
+.body .dashcard-container h2 {
+  color: #00923F;
+  padding: 20px 10px;
+}
+.body .dashcard-container .dashcard-wrapper {
+  width: 600px;
+  height: 250px;
+  border: 1px solid #00923F;
+  border-radius: 20px;
+  margin-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #93ae9e;
+}
+.body .dashcard-container .dashcard-wrapper h4 {
+  text-align: center;
+  color: red;
+}
+.body .dashcard-container .comment-wrapper input {
+  width: 500px;
+  height: 250px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  background-color: #93ae9e;
+  font-size: 18px;
+}
+.body .dashcard-container .comment-wrapper input::-webkit-input-placeholder {
+  color: #00923F;
+  font-style: italic;
+  font-size: 16px;
+  padding-left: 50px;
+}
+.body .dashcard-container .comment-wrapper input::-moz-placeholder {
+  color: #00923F;
+  font-style: italic;
+  font-size: 16px;
+  padding-left: 50px;
+}
+.body .dashcard-container .comment-wrapper input:-ms-input-placeholder {
+  color: #00923F;
+  font-style: italic;
+  font-size: 16px;
+  padding-left: 50px;
+}
+.body .dashcard-container .comment-wrapper input::-ms-input-placeholder {
+  color: #00923F;
+  font-style: italic;
+  font-size: 16px;
+  padding-left: 50px;
+}
+.body .dashcard-container .comment-wrapper input::placeholder {
+  color: #00923F;
+  font-style: italic;
+  font-size: 16px;
+  padding-left: 50px;
+}
+.body .dashcard-container .comment-wrapper button {
+  padding: 10px;
+  background-color: #00923F;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  color: yellow;
+  font-size: 16px;
+}
+.body .dashcard-container .comment-wrapper button:hover {
+  color: #00923F;
+  background-color: yellow;
+}
+
 @media (max-width: 768px) {
   .hero {
     margin-bottom: 100px;
@@ -469,6 +700,11 @@ nav ul.navlinks.display {
 
 main {
   overflow: hidden;
+  /* comment to see the default style */
+  /* comment to see the default style */
+  /*         styling indicator/nav  buttons          */
+  /* to style the indicator buttons, just as the control buttons inspect the page and get the it class, then style class */
+  /* comment to see the default style */
 }
 main .hero {
   position: relative;
@@ -510,6 +746,22 @@ main .image-container .text {
 main .image-container .text h1 {
   font-size: 120px;
   color: yellow;
+  margin-bottom: 50px;
+}
+main .image-container .text a {
+  color: yellow;
+  background: #00923F;
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;
+  border-radius: 20px;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+main .image-container .text a:hover {
+  border-radius: 15px 0 15px 0;
+  background-color: yellow;
+  color: #00923F;
 }
 main .kyp_logo {
   display: -webkit-box;
@@ -625,7 +877,7 @@ main .candidates .candidateimg img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 50%;
+  border-radius: 50px 0 50px 0;
 }
 main .candidates .candidate-p a {
   color: #00923F;
@@ -633,6 +885,15 @@ main .candidates .candidate-p a {
   text-decoration: underline;
   font-size: 25px;
   font-weight: 600;
+  background-color: rgb(202, 239, 207);
+  padding: 50px;
+  border-radius: 50%;
+  -webkit-transition: all;
+  transition: all;
+}
+main .candidates .candidate-p a:hover {
+  -webkit-text-decoration: underline 5px;
+          text-decoration: underline 5px;
 }
 main .history {
   width: 100%;
@@ -1293,4 +1554,79 @@ main .signupform form a:hover {
     height: auto;
     padding-inline: 5% !important;
   }
+}
+main .gallery-section {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #00923F;
+  background: rgb(202, 239, 207);
+}
+main .gallery-section h1 span {
+  color: #00923F;
+}
+main .gallery-section .image {
+  width: 100%;
+}
+main .gallery-section .carousel-wrapper {
+  width: 80%;
+}
+main .gallery-section .new-cosines-slider img {
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .gallery-section h3 {
+  color: #00923F;
+}
+main .gallery-section h4 {
+  color: yellow;
+}
+main .tns-controls {
+  margin-bottom: 10px;
+}
+main .tns-controls button {
+  padding: 5px 12px;
+  background-color: #00923F;
+  color: yellow;
+  letter-spacing: 1.5px;
+  border-radius: 10px;
+  border: none;
+  -webkit-transition: 1.5s ease;
+  transition: 1.5s ease;
+}
+main .tns-controls button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #00923F;
+  background-color: yellow;
+}
+main .tns-controls button:first-child {
+  margin-right: 5px;
+}
+main .tns-nav {
+  text-align: center;
+}
+main .tns-nav button {
+  margin-right: 4px;
+  border-radius: 50%;
+  padding: 5px;
+  width: 5px;
+  outline: 0;
+  border: 0;
+  background-color: gray;
+}
+main button.tns-nav-active {
+  background-color: #00923F;
 }

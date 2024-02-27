@@ -12,7 +12,93 @@ nav {
 
 main {
     @include landingPage;
+  
+  .gallery-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $secondarycolor;
+    background: $secbackgroundcolor;
+    // margin-bottom: 500px;
+        h1 span {
+            color: $secondarycolor;
+        }
 
+        .image {
+            width: 100%;
+        }
+
+        .carousel-wrapper {
+            width: 80%;
+          }
+
+          .new-cosines-slider img {
+            height: 350px;
+            object-fit: cover;
+          }
+          h3 {
+            color: $secondarycolor;
+
+          }
+          h4 {
+            color: $primarycolor;
+            
+          }
+    }
+  
+  
+  
+  
+  
+  
+  .tns-controls {
+    margin-bottom: 10px;
+  }
+  
+  /* comment to see the default style */
+  .tns-controls button {
+    padding: 5px 12px;
+    background-color: $secondarycolor;
+    color: $primarycolor;
+    letter-spacing: 1.5px;
+    border-radius: 10px;
+    border: none;
+    transition: 1.5s ease;
+    &:hover {
+        transform: scale(1.1);
+        color: $secondarycolor;
+        background-color: $primarycolor;
+    }
+  }
+  
+  /* comment to see the default style */
+  .tns-controls button:first-child {
+    margin-right: 5px;
+  }
+  
+  /*         styling indicator/nav  buttons          */
+  /* to style the indicator buttons, just as the control buttons inspect the page and get the it class, then style class */
+  /* comment to see the default style */
+  .tns-nav {
+    text-align: center;
+  }
+  
+  .tns-nav button {
+    margin-right: 4px;
+    border-radius: 50%;
+    padding: 5px;
+    width: 5px;
+    outline: 0;
+    border: 0;
+    background-color: gray;
+  }
+  
+  button.tns-nav-active {
+    background-color: $secondarycolor;
+  }
+  
     
-}
+    }
 
